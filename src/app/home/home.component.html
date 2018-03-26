@@ -1,0 +1,26 @@
+<article>
+    <header class="page-header">
+        <h1>Projeto Exemplo</h1>
+    </header>
+
+
+    <button *ngIf="postLoadStatus == LoadingStatus.NOT_LOADED" (click)="loadPosts()">
+        Exemplo REST
+    </button>
+    
+    <ng-template *ngIf="postLoadStatus == LoadingStatus.LOADING">
+        Loading...
+    </ng-template>
+    
+    <div *ngIf="postLoadStatus == LoadingStatus.LOADED">
+        <div class="post" *ngFor="let post of posts">
+            <div class="row">
+                <div class="title">{{post.title}}</div>
+            </div>
+    
+            <div class="row">
+                <div class="content">{{post.body}}</div>
+            </div>
+        </div>
+    </div>
+</article>

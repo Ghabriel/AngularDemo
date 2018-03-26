@@ -1,0 +1,43 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" routerLink="/">Projeto Exemplo</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-item" routerLink="/objects">
+                        Link 1
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" routerLink="/cart">
+                        Link 2
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown">
+                        Lista de links
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" routerLink="/objects/add">Link 3</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" routerLink="/objects/remove">Link 4</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
