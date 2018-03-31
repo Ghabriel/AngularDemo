@@ -1,0 +1,26 @@
+div.post {
+    border-collapse: collapse;
+    display: table;
+    margin-bottom: 10px;
+    width: 600px;
+}
+
+div.row {
+    display: table-row;
+}
+
+div.row > * {
+    border: 1px solid black;
+    display: table-cell;
+    padding: 5px;
+}
+
+div.post .title {
+    background-color: #DDD;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.post .content {
+    text-indent: 30px;
+}

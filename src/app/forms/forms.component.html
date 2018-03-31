@@ -1,0 +1,42 @@
+<article>
+    <header class="page-header">
+        <h1>Projeto Exemplo - Forms</h1>
+    </header>
+
+    <table class="table table-hover">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Ação</th>
+        </tr>
+        <tr *ngFor="let language of languages; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td class="col-sm-10">{{ language }}</td>
+            <td>
+                <button class="btn btn-primary" (click)="editLanguage(i)">editar</button>
+                <button class="btn btn-danger" (click)="removeLanguage(i)">remover</button>
+            </td>
+        </tr>
+    </table>
+
+    <form (submit)="addLanguage(language.value); language.value = ''">
+        <div class="form-group">
+            <label for="language_input">Adicionar linguagem:</label>
+            <input type="text" id="language_input" class="form-control" #language>
+        </div>
+        <button type="submit" class="btn btn-primary">OK</button>
+    </form>
+
+    <ng-container *ngIf="editIndex !== null">
+        <hr>
+    
+        <form (submit)="finishEdit()">
+            <div class="form-group">
+                <label for="language_name">Editar linguagem:</label>
+                <input type="text" id="language_name" class="form-control"
+                name="language_name" [(ngModel)]="languages[editIndex]">
+            </div>
+            <button type="submit" class="btn btn-primary">OK</button>
+        </form>
+    </ng-container>
+</article>
