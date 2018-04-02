@@ -1,6 +1,0 @@
-<div class="alert-container">
-    <alert *ngFor="let notification of notifications" class="fade"
-        [class.in]="!notification.dismissed" [type]="notification.type">
-        {{notification.content}}
-    </alert>
-</div>

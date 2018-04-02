@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { FormsComponent } from './forms/forms.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { NotificationModule } from './notification/notification.module';
 import { RestComponent } from './rest/rest.component';
 import { PostsService } from './services/posts.service';
 
@@ -25,8 +24,7 @@ import { PostsService } from './services/posts.service';
         AppRoutingModule,
         BrowserModule,
         FormsModule,
-        HttpClientModule,
-        NotificationModule
+        HttpClientModule
     ],
     providers: [
         PostsService
