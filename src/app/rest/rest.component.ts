@@ -22,14 +22,11 @@ export class RestComponent implements OnInit {
     // Permitir acesso à enum no html
     private readonly LoadingStatus = LoadingStatus;
 
-    constructor(private postsService: PostsService) {
-        console.log('[CONSTRUCTOR]');
-        this.postLoadStatus = LoadingStatus.NOT_LOADED;
-        this.posts = [];
-    }
+    constructor(private postsService: PostsService) { }
 
     ngOnInit() {
-        console.log('[ON INIT]');
+        this.postLoadStatus = LoadingStatus.NOT_LOADED;
+        this.posts = [];
     }
 
     loadPosts(): void {
