@@ -16,11 +16,11 @@ enum LoadingStatus {
 })
 export class RestComponent implements OnInit {
 
-    private postLoadStatus: LoadingStatus;
-    private posts: Post[];
+    postLoadStatus: LoadingStatus;
+    posts: Post[];
 
     // Permitir acesso à enum no html
-    private readonly LoadingStatus = LoadingStatus;
+    readonly LoadingStatus = LoadingStatus;
 
     constructor(private postsService: PostsService) { }
 

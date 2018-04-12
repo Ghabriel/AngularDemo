@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormsComponent implements OnInit {
 
-    private languages: string[];
-    private editIndex: number | null;
+    languages: string[];
+    editIndex: number | null;
 
     ngOnInit() {
         this.languages = ['TypeScript', 'PHP'];
