@@ -2,3 +2,11 @@
 	margin-right: 2px;
 }
 
+.table td.stretch {
+	width: 100%;
+}
+
+.table td.no-stretch {
+	white-space: nowrap;
+	width: 1%;
+}

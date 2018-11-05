@@ -1,29 +1,23 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" routerLink="/">Projeto Exemplo</a>
 
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarMenu">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" routerLink="/">Projeto Exemplo</a>
-        </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a class="dropdown-item" routerLink="/rest">
-                        REST
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-item" routerLink="/forms">
-                        Forms
-                    </a>
-                </li>
-            </ul>
-        </div>
-
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/rest">
+                    REST
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/forms">
+                    Forms
+                </a>
+            </li>
+        </ul>
     </div>
 </nav>
